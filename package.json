@@ -1,0 +1,28 @@
+{
+  "name": "streamdeck-app-frontend",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubewe/streamdeck-app-frontend.git"
+  },
+  "author": "jubewe",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jubewe/streamdeck-app-frontend/issues"
+  },
+  "homepage": "https://github.com/jubewe/streamdeck-app-frontend#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "preact": "^10.17.0",
+    "react": "^18.2.0",
+    "webpack": "^5.88.2"
+  },
+  "dependencies": {
+    "oberknecht-utils": "^1.6.8"
+  }
+}

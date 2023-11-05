@@ -1,0 +1,272 @@
+:root {
+  --padding-default: 2px;
+  --padding-small: 0.7px;
+  --borderRadius-default: 5px;
+
+  --color-white: #f1faee;
+  --color-green: #a1c181;
+  --color-red: #bc3908;
+  --color-orange: #f6aa1c;
+  --color-dark: #0d1321;
+
+  --color-background: #233d4d;
+  --color-background-1: #619b8a;
+  --color-background-2: #3e5c76;
+  --color-background-3: #38a3a5;
+  --color-background-popout: #1d2d44;
+  --color-background-chat-user: #2e8588;
+  --color-background-chat-timestamp: #4ad7db;
+  --color-background-chat-message: #174445;
+  --color-background-chat-message-input: #345b73;
+  --color-background-chat-message-input-outline: #467a9a;
+  --color-background-chat-users-add-input: #345b73;
+  --color-background-chat-users-add-outline: #467a9a;
+  --color-background-chat-chats-active: #5d8ab1;
+
+  --color-border-light: #f1faee75;
+  --color-border-dark: #0d132185;
+  --color-border-chat-messages-user: #45c8cc;
+  --color-border-chat-messages-timestamp: #2e8588;
+
+  --color-background-process: #a8dadc;
+
+  --font-size-default-big: 23px;
+  --font-size-default-big-2: 30px;
+  --font-size-default-small: 15px;
+
+  padding: var(--padding-default);
+  border-radius: var(--borderRadius-default);
+}
+
+* {
+  border-radius: var(--borderRadius-default);
+  transition: ease 100ms;
+}
+
+button {
+  background-color: var(--color-background-2);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  outline: none;
+  cursor: pointer;
+}
+
+jbody * {
+  padding: 3px;
+  margin: 3px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-white);
+}
+
+body > * {
+  padding: 3px;
+  margin: 5px;
+}
+
+.bg-red {
+  background-color: var(--color-red) !important;
+}
+
+.bg-green {
+  background-color: var(--color-green) !important;
+}
+
+.dp-none {
+  display: none !important;
+}
+
+jtop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+jbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jTopMiddleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.streamdeckConfiguratorContainer {
+  display: flex;
+  width: 100%;
+}
+
+.streamdeckContainer,
+.configContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.configContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--color-white);
+  height: 75vh;
+}
+
+.streamdeckContainer-full {
+  width: 100%;
+}
+
+.streamdeckImage {
+  /* width: 400px; */
+  width: 35vw;
+}
+
+.streamdeckContainer-inner {
+  /* display: grid; */
+  display: flex;
+  border: 1px solid var(--color-white);
+  border-radius: 10px;
+  width: 400px;
+  height: 100%;
+  background-color: #353333;
+  grid-auto-rows: 40px;
+  grid-auto-columns: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streamdeckContainer-inner-top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.streamdeckContainer-inner-bottom {
+  display: grid;
+  /* width: 90%; */
+  justify-content: space-between;
+  border: 1px solid var(--color-background-2);
+  /* gap: 5px 5px; */
+}
+
+.streamdeck-re {
+  width: 35px;
+  height: 35px;
+  background-color: #b8b8b8;
+  border-radius: 100%;
+}
+
+.streamdeck-sw {
+  width: 55px;
+  height: 55px;
+  background-color: #384a5a;
+  margin: 5px;
+}
+
+.configContainer > * {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 3px;
+}
+
+.configContainerTop,
+.configActionContainerTop {
+  text-align: center;
+  align-items: center;
+  background-color: var(--color-background-2);
+}
+
+.configContainerTop,
+.configContainerMiddle,
+.configActionContainer {
+  border: 1px solid var(--color-white);
+}
+
+.configContainerMiddle,
+.configActionContainer {
+  height: 70%;
+}
+
+.configActionContainer {
+  overflow: auto;
+}
+
+.configContainerTop {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.configContainerBottom {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.configContainerBottom,
+.configContainerBottom > * {
+  margin: 0;
+  padding: 0;
+}
+
+.configContainerBottomSave,
+.configContainerBottomExit {
+  display: flex;
+  justify-content: end;
+}
+
+.configContainerBottomExit button {
+  color: var(--color-dark);
+}
+
+.configExecutionsActionContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--color-white);
+}
+
+.configExecutionsActionContainerRight,
+.configExecutionsActionContainerRight * {
+  padding: 2px;
+  margin: 0;
+}
+
+.configExecutionActionsActionContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.configExecutionActionsActionMove:disabled {
+  border: 1px solid grey;
+  color: grey;
+  cursor: not-allowed;
+}
+
+.configExecutionActionsActionDelete {
+  border: 1px solid var(--color-red);
+  background-color: var(--color-red);
+}
+
+.configExecutionActionsActionButton {
+  width: 23px;
+  margin: 1px;
+}
+
+.configExecutionActionsActionDelete {
+  text-shadow: 1px 1px 0px green;
+}
+
+/* .configExecutionsActionsActionArgsInput {
+  width: 100%;
+} */
+
+.configExecutionsExecutionSelect[type="number"] {
+  width: 40px;
+}
